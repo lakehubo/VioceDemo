@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/base_bg_drawable"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:background="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="2dp"/>
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:background="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="2dp"/>
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你可以这么说"
+        android:textColor="#ff000000"
+        android:textSize="24sp" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“关闭一层客厅筒灯”"
+        android:textColor="#ff181c23"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“打开主卧空调”"
+        android:textColor="#ff181c23"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“执行离家场景”"
+        android:textColor="#ff181c23"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“暂停二层阳台窗帘”"
+        android:textColor="#ff181c23"
+        android:textSize="16sp" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <com.lake.speechdemo.view.SpeechVoiceButton
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/speech_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"/>
+        <com.lake.speechdemo.view.AnimatedRecordingView
+            android:layout_gravity="bottom"
+            android:id="@+id/animation_view"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </FrameLayout>
+</LinearLayout>
