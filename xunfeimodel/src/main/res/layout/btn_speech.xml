@@ -4,10 +4,11 @@
     android:layout_height="60dp">
     <ImageView
         android:id="@+id/fab_btn"
-        android:background="@drawable/circle_bg_drawable"
+        android:background="@mipmap/btn_voice_speak"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     <ImageView
+        android:visibility="gone"
         android:id="@+id/imgaSrc"
         android:background="@mipmap/voice9"
         android:layout_gravity="center"

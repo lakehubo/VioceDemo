@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         btn = findViewById(R.id.speechBtn);
         btn.setOnClickListener(v->{
+            //语音交互界面
             BaseBottomSheetView baseBottomSheetView = new BaseBottomSheetView(this);
             baseBottomSheetView.show();
         });

@@ -243,6 +243,7 @@ public class XunfeiManager {
             @Override
             public void showQuestionText(String text) {
                 if (TextUtils.isEmpty(text)) {
+                    serviceListener.showStatus(SpeechVoiceButton.State.sDefault);
                     return;
                 }
                 serviceListener.showQuestionText(text);
@@ -267,7 +268,7 @@ public class XunfeiManager {
 
             @Override
             public void isComplete() {
-                serviceListener.showStatus(SpeechVoiceButton.State.sDefault);
+//                serviceListener.showStatus(SpeechVoiceButton.State.sDefault);
             }
 
             @Override
@@ -284,7 +285,7 @@ public class XunfeiManager {
 
             @Override
             public void isComplete() {
-                serviceListener.showStatus(SpeechVoiceButton.State.sDefault);
+//                serviceListener.showStatus(SpeechVoiceButton.State.sDefault);
             }
 
             @Override

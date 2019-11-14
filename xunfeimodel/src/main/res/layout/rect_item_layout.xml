@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="75dp"
+    android:id="@+id/rect_item_bg"
+    android:background="@drawable/rect_white_item_bg"
+    android:layout_height="30dp">
+    <TextView
+        android:id="@+id/control_text"
+        android:gravity="center"
+        android:text="制冷"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#ffff6e00"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.constraint.ConstraintLayout>

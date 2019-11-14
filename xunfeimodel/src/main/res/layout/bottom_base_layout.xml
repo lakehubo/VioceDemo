@@ -23,50 +23,27 @@
             android:layout_width="30dp"
             android:layout_height="2dp"/>
     </LinearLayout>
-    <TextView
-        android:gravity="center"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="你可以这么说"
-        android:textColor="#ff000000"
-        android:textSize="24sp" />
-    <TextView
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="“关闭一层客厅筒灯”"
-        android:textColor="#ff181c23"
-        android:textSize="16sp" />
-    <TextView
-        android:layout_marginTop="18dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="“打开主卧空调”"
-        android:textColor="#ff181c23"
-        android:textSize="16sp" />
-    <TextView
-        android:layout_marginTop="18dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="“执行离家场景”"
-        android:textColor="#ff181c23"
-        android:textSize="16sp" />
-    <TextView
-        android:layout_marginTop="18dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="“暂停二层阳台窗帘”"
-        android:textColor="#ff181c23"
-        android:textSize="16sp" />
-
+        android:layout_height="500dp">
+        <FrameLayout
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/question_btn"
+            android:background="@mipmap/question"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
         <com.lake.speechdemo.view.SpeechVoiceButton
             android:layout_gravity="bottom|center_horizontal"
             android:id="@+id/speech_btn"
@@ -76,8 +53,8 @@
         <com.lake.speechdemo.view.AnimatedRecordingView
             android:layout_gravity="bottom"
             android:id="@+id/animation_view"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="30dp"
             android:layout_width="match_parent"
-            android:layout_height="60dp"/>
+            android:layout_height="100dp"/>
     </FrameLayout>
 </LinearLayout>
